@@ -1,49 +1,23 @@
-import React, { useState } from 'react';
+import React from "react";
+import TextInput from "./TextInput";
 
-function LoginForm() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log('Email:', email);
-    console.log('Password:', password);
-  };
-
+const LoginForm = () => {
   return (
-    <div className="form-container">
+    <div className="from-container">
       <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
 
-      <form className="form" onSubmit={handleSubmit}>
-        <label htmlFor="email" className="label">Email address</label>
-        <input 
-          type="text" 
-          id="email" 
-          placeholder="platzi@example.com" 
-          className="input input-email" 
-          value={email} 
-          onChange={(event) => setEmail(event.target.value)}
-        />
+      <h1 className="title">Create a new password</h1>
+      <p className="subtitle">Enter a new password for your account</p>
 
-        <label htmlFor="password" className="label">Password</label>
-        <input 
-          type="password" 
-          id="password" 
-          placeholder="*********" 
-          className="input input-password" 
-          value={password} 
-          onChange={(event) => setPassword(event.target.value)}
-        />
+      <form action="/" className="from">
+        <TextInput label="password" placeholder="********" type="password" />
+        <TextInput label="new-password" placeholder="********" type="password" />
 
-        <input type="submit" value="Log in" className="primary-button login-button" />
-        
-        <a href="/">Forgot my password</a>
+        <input type="submit" value="Confirm" className="primary-button login-button" />
       </form>
-      
-
-      <button className="secondary-button signup-button">Sign up</button>
     </div>
   );
-}
+};
 
 export default LoginForm;
