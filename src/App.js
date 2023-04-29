@@ -1,14 +1,13 @@
-import React from 'react';
-import LoginPage from './components/LoginPage';
-
-
+import React from "react";
+import "./App.css";
+import LoginForm from "./components/LoginForm";
+import './components/styles.css';
 function App() {
   return (
-    <div>
-      <LoginPage />
+    <div className="login">
+      <LoginForm />
     </div>
   );
 }
 
 export default App;
-
