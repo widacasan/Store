@@ -1,16 +1,16 @@
 import React from "react";
 import "./App.css";
-import iconMenu from '../assets/icons/icon_menu.svg';
-import logoYardSale from '../assets/logos/logo_yard_sale.svg';
-import iconShoppingCart from '../assets/icons/icon_shopping_cart.svg'
+import iconMenu from "../assets/icons/icon_menu.svg";
+import logoYardSale from "../assets/logos/logo_yard_sale.svg";
+import iconShoppingCart from "../assets/icons/icon_shopping_cart.svg";
 
 function TopBar() {
   return (
     <div>
       <nav>
-        <img src={iconMenu} alt="menu"  />
+        <img src={iconMenu} alt="menu" />
         <div className="navbar-left">
-          <img src={logoYardSale} alt="logo"  />
+          <img src={logoYardSale} alt="logo" />
 
           <ul>
             <li>
