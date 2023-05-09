@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import faviconYardSale from "../assets/logos/favicon_yard_sale.svg";
+import "./App.css";
 
 function LoginForm() {
   const [email, setEmail] = useState("");
