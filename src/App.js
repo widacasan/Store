@@ -1,11 +1,14 @@
 import React from 'react';
-import LoginPage from './components/LoginPage';
+import LoginForm from './components/LoginForm';
+import "./components/styles.css";
 
 
 function App() {
   return (
     <div>
-      <LoginPage />
+      
+      <LoginForm/>
+
     </div>
   );
 }
