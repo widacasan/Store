@@ -90,12 +90,11 @@
     .menu {
       display: none;
     }
-    .logo {
-      width: 150px;
-      margin-bottom: 48px;
-      justify-self: center;
-      display: none;
-    }
+    .logo{ width: 150px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
     .navbar-left ul,
     .navbar-right ul {
       list-style: none;

@@ -21,11 +21,7 @@ body {
   place-items: center;
 }
 
-.form-container {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  width: 300px;
-}
+
 
 .logo {
   width: 150px;
